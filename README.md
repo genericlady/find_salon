@@ -21,14 +21,14 @@
 * useful methods for interface `list_salons`, `menu` and `goodbye`
 
 * start making things real
-** Start to get real data
-** https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters
-** output can be json / xml
-** separate each parameter with `&`
-** required parameters key/location/radius/rankby=distance
-**https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=YOUR_API_KEY
-** type=beauty_salon
-** key=PLACES_KEY
+* Start to get real data
+* https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters
+* output can be json / xml
+* separate each parameter with `&`
+* required parameters key/location/radius/rankby=distance
+* https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=YOUR_API_KEY
+* type=beauty_salon
+* key=PLACES_KEY
 * discover objects
 
 * program
