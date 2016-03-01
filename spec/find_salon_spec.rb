@@ -6,10 +6,10 @@ describe FindSalon do
   end
 
   describe 'FindSalon::CLI' do
+    let(:cli) { FindSalon::CLI.new('69.200.240.51') }
+
     context '#initialize' do
       it 'accepts an initialize for the user' do
-        cli = FindSalon::CLI.new('69.200.240.51')
-
         expect(cli.external_ip).to eq('69.200.240.51')
       end
 
@@ -26,15 +26,18 @@ describe FindSalon do
     end
 
     context '#start' do
-      let(:cli) { FindSalon::CLI.new('69.200.240.51') }
-
       it 'print a welcome message to the screen' do
         expect { cli.start }.to output("Welcome to FindSalon.\n").to_stdout
       end
     end
 
+    context '#user_location' do
+      it "tells the user their location based off of FindSalon's geolocation." do
+        expect { cli.user_location }.to output("Your current location is #{cli.user_location}\n").to_stdout
+      end
+    end
+
     context '#list_results' do
-      let(:cli) { FindSalon::CLI.new('69.200.240.51') }
 
       it 'lists results in numbered order.' do
         salon_info = <<-info.gsub /^\s*/,''
