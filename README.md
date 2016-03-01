@@ -26,7 +26,7 @@
 * output can be json / xml
 * separate each parameter with `&`
 * required parameters key/location/radius/rankby=distance
-* https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=restaurant&name=cruise&key=YOUR_API_KEY
+* https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=beauty_salonkey=YOUR_API_KEY
 * type=beauty_salon
 * key=PLACES_KEY
 * discover objects
@@ -36,12 +36,15 @@
 # A command line tool that finds salons near your location
 
 * a user types find-salon and shows a list of salons with services, price range, address and ratings.
+* list results
 
 1. Tease Hair Group - 4.6 - reviews: 10
    199 2nd Ave - (212) 725-7088
 
 * a user selects a number and can read the reviews if there are any
 * a user can add a salon to their bookmarks
+
+# How to get an external ip address in ruby
 
 # Notes
 
