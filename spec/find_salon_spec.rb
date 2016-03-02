@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FindSalon do
+describe FindSalon, :vcr do
   it 'has a version number' do
     expect(FindSalon::VERSION).not_to be nil
   end
@@ -27,18 +27,21 @@ describe FindSalon do
 
     context '#start' do
       it 'print a welcome message to the screen' do
-        expect { cli.start }.to output("Welcome to FindSalon.\n").to_stdout
+        VCR.use_cassette('find-salon-user-location') do
+          expect { cli.start }.to output("Welcome to FindSalon.\nYou are in: Astoria, New York\n").to_stdout
+        end
       end
     end
 
     context '#user_location' do
-      it "tells the user their location based off of FindSalon's geolocation." do
-        expect { cli.user_location }.to output("Your current location is #{cli.user_location}\n").to_stdout
+      it "returns the user's City and State based off of FindSalon's geolocation." do
+        VCR.use_cassette('find-salon-user-location') do
+          expect(cli.user_location).to eq('Astoria, New York')
+        end
       end
     end
 
     context '#list_results' do
-
       it 'lists results in numbered order.' do
         salon_info = <<-info.gsub /^\s*/,''
           1. Tease Hair Group - 4.6 - reviews: 10

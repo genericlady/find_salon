@@ -1,7 +1,7 @@
 require 'pry'
 
 class FindSalon::CLI
-  attr_reader :external_ip, :location_name
+  attr_reader :external_ip
 
   def initialize(external_ip = nil)
     @external_ip = external_ip || self.class.get_external_ip
@@ -9,6 +9,7 @@ class FindSalon::CLI
 
   def start
     puts "Welcome to FindSalon."
+    puts "You are in: " + user_location
   end
 
   def list_results
@@ -24,28 +25,18 @@ class FindSalon::CLI
   end
 
   def user_location
-    url = "http://freegeoip.net:80/json/#{external_ip}"
-    # json = {
-    #   ip: "69.200.240.81",
-    #   country_code: "US",
-    #   country_name: "United States",
-    #   region_code: "NY",
-    #   region_name: "New York",
-    #   city: "Astoria",
-    #   zip_code: "11102",
-    #   time_zone: "America/New_York",
-    #   latitude: 40.7732,
-    #   longitude: -73.926,
-    #   metro_code: 501
-    # }
-
+    # geoip_city_data = {"city"=>{"names"=>{"en"=>"Astoria"}},
+    #                      "subdivisions"=>
+    #                       [{"names"=>
+    #                          {"en"=>"New York",
+    #                         "geoname_id"=>5128638}],
+    #                      "location"=>
+    #                       {"latitude"=>40.7732,
+    #                        "longitude"=>-73.926}}}
     # json["latitude"] json["longitude"]
-    uri = URI.parse(url)
-    response = Net::HTTP.get_response(uri)
-    data = response.body
-    binding.pry
-    json = JSON.parse(data)
-    @location_name = json["city"]+", "+json["region_code"]
+    geoip_city_data = Geoip2.client.city(external_ip)
+    geoip_state_data = geoip_city_data["subdivisions"][0]
+    @location_name = geoip_city_data["city"]["names"]["en"]+", "+geoip_state_data["names"]["en"]
   end
 
 end
