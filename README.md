@@ -21,7 +21,7 @@
 ```ruby
 public_ip = `curl https://api.ipify.org`
 ```
-uri = URI.parse("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=beauty_salon&key=AIzaSyDHV3R2uC7lA3CCuPZu3HzdPu9HI-bu3RM")
+uri = URI.parse("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=beauty_salon&key=ENV[GOOGLE_PLACES_KEY]
 
 response = Net::HTTP.get_response(uri)
 response.readbody
