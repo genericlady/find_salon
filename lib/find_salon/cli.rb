@@ -13,12 +13,10 @@ class FindSalon::CLI
   end
 
   def list_results
-    FindSalon::Result.all.each { |e|  }
-    salon_info = <<-info.gsub(/^\s*/,'')
-      1. Tease Hair Group - 4.6
-      199 2nd Ave
-    info
-    puts salon_info
+    puts "Salons near you:"
+    FindSalon::Result.all.each.with_index(1) do |result, i|
+      puts "#{i}. #{result.name}"
+    end
   end
 
   def self.get_external_ip
@@ -33,5 +31,4 @@ class FindSalon::CLI
     city = geoip2_city_data["city"]["names"]["en"]
     @user_location = city + ", " + state
   end
-
 end
