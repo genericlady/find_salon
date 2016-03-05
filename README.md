@@ -30,32 +30,19 @@ For more details select 1-5 or type exit
 ### Nearby Search to get results
 
 ```ruby
-https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=
-# Google Places nearbysearch
-place_nearby_search_json = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
-place_location = "location=40.7732,-73.926"
-radius = "&radius=500"
-place_type = "&type=beauty_salon"
-place_key = "&key=#{ENV['GOOGLE_PLACES_KEY']}"
-
-# Concatenate url
-url = place_nearby_search_json + place_location + radius + place_type + place_key
+"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
 
 uri = URI.parse(url)
 
 response = Net::HTTP.get_response(uri)
-body = response.body
-json = JSON.parse(body)
-search_results = json['results']
 
-place = json['results'].first
-place['geometry']['location']['lat']
-place['geometry']['location']['lng']
-place['name'] place['vicinity'] place['rating']
-json['next_page_token']
+json = JSON.parse(response.body)
+
+result = json['results'].first
+result['name'] result['vicinity'] result['rating']
 result['place_id']
 
-# Raise an error for bad status
+json['next_page_token']
 json['status']
 ```
 
