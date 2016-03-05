@@ -1,0 +1,2 @@
+class FindSalon::Result
+end
