@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geoip.maxmind.com/geoip/v2.0/city/69.200.240.51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Basic MTA5ODM4OjE0Um0yT3kzV2t4Qw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Accept
+      Content-Length:
+      - '1365'
+      Content-Type:
+      - application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.0
+      Date:
+      - Sat, 05 Mar 2016 17:35:59 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdWJkaXZpc2lvbnMiOlt7Imdlb25hbWVfaWQiOjUxMjg2MzgsImlzb19j
+        b2RlIjoiTlkiLCJuYW1lcyI6eyJmciI6Ik5ldyBZb3JrIiwiZXMiOiJOdWV2
+        YSBZb3JrIiwicnUiOiLQndGM0Y4t0JnQvtGA0LoiLCJkZSI6Ik5ldyBZb3Jr
+        IiwiZW4iOiJOZXcgWW9yayIsInpoLUNOIjoi57q957qm5beeIiwicHQtQlIi
+        OiJOb3ZhIElvcnF1ZSIsImphIjoi44OL44Ol44O844Oo44O844Kv5beeIn19
+        XSwibG9jYXRpb24iOnsidGltZV96b25lIjoiQW1lcmljYS9OZXdfWW9yayIs
+        ImxhdGl0dWRlIjo0MC43NjExLCJsb25naXR1ZGUiOi03My45MzE5LCJtZXRy
+        b19jb2RlIjo1MDF9LCJjb3VudHJ5Ijp7Im5hbWVzIjp7ImZyIjoiw4l0YXRz
+        LVVuaXMiLCJlcyI6IkVzdGFkb3MgVW5pZG9zIiwicnUiOiLQodCo0JAiLCJl
+        biI6IlVuaXRlZCBTdGF0ZXMiLCJkZSI6IlVTQSIsImphIjoi44Ki44Oh44Oq
+        44Kr5ZCI6KGG5Zu9IiwiemgtQ04iOiLnvo7lm70iLCJwdC1CUiI6IkVzdGFk
+        b3MgVW5pZG9zIn0sImlzb19jb2RlIjoiVVMiLCJnZW9uYW1lX2lkIjo2MjUy
+        MDAxfSwidHJhaXRzIjp7Im9yZ2FuaXphdGlvbiI6IlRpbWUgV2FybmVyIENh
+        YmxlIiwiZG9tYWluIjoicnIuY29tIiwiYXV0b25vbW91c19zeXN0ZW1fb3Jn
+        YW5pemF0aW9uIjoiVGltZSBXYXJuZXIgQ2FibGUgSW50ZXJuZXQgTExDIiwi
+        aXNwIjoiVGltZSBXYXJuZXIgQ2FibGUiLCJhdXRvbm9tb3VzX3N5c3RlbV9u
+        dW1iZXIiOiIxMjI3MSIsImlwX2FkZHJlc3MiOiI2OS4yMDAuMjQwLjUxIn0s
+        Im1heG1pbmQiOnsicXVlcmllc19yZW1haW5pbmciOjQzNzA0fSwiY29udGlu
+        ZW50Ijp7Im5hbWVzIjp7InJ1Ijoi0KHQtdCy0LXRgNC90LDRjyDQkNC80LXR
+        gNC40LrQsCIsImVzIjoiTm9ydGVhbcOpcmljYSIsImZyIjoiQW3DqXJpcXVl
+        IGR1IE5vcmQiLCJ6aC1DTiI6IuWMl+e+jua0siIsInB0LUJSIjoiQW3DqXJp
+        Y2EgZG8gTm9ydGUiLCJqYSI6IuWMl+OCouODoeODquOCqyIsImVuIjoiTm9y
+        dGggQW1lcmljYSIsImRlIjoiTm9yZGFtZXJpa2EifSwiY29kZSI6Ik5BIiwi
+        Z2VvbmFtZV9pZCI6NjI1NTE0OX0sInJlZ2lzdGVyZWRfY291bnRyeSI6eyJu
+        YW1lcyI6eyJlbiI6IlVuaXRlZCBTdGF0ZXMiLCJkZSI6IlVTQSIsInpoLUNO
+        Ijoi576O5Zu9IiwicHQtQlIiOiJFc3RhZG9zIFVuaWRvcyIsImphIjoi44Ki
+        44Oh44Oq44Kr5ZCI6KGG5Zu9IiwiZnIiOiLDiXRhdHMtVW5pcyIsImVzIjoi
+        RXN0YWRvcyBVbmlkb3MiLCJydSI6ItCh0KjQkCJ9LCJpc29fY29kZSI6IlVT
+        IiwiZ2VvbmFtZV9pZCI6NjI1MjAwMX0sInBvc3RhbCI6eyJjb2RlIjoiMTEx
+        MDYifSwiY2l0eSI6eyJuYW1lcyI6eyJlbiI6IkFzdG9yaWEifSwiZ2VvbmFt
+        ZV9pZCI6NTEwNzQ2NH19
+    http_version: 
+  recorded_at: Sat, 05 Mar 2016 17:35:59 GMT
+recorded_with: VCR 3.0.1
