@@ -30,7 +30,7 @@ For more details select 1-5 or type exit
 ### Nearby Search to get results
 
 ```ruby
-https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=AIzaSyDHV3R2uC7lA3CCuPZu3HzdPu9HI-bu3RM
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=
 # Google Places nearbysearch
 place_nearby_search_json = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
 place_location = "location=40.7732,-73.926"
