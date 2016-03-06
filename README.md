@@ -2,7 +2,6 @@
 * stub out the interface (use a heredoc and make things easy)
 
 # A command line tool that finds salons near your location
-* https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&type=beauty_salonkey=YOUR_API_KEY
 
 # List Search Results. Choose place from list. Search for place by place_id
 ## List results, type `find-salon` for a list of salons nearby
