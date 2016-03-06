@@ -41,7 +41,7 @@ describe FindSalon::Result, :vcr do
     end
   end
 
-  describe '.load from FindSalon' do
+  xdescribe '.load from FindSalon' do
     it 'loads results from FindSalon' do
       FindSalon::Result.reset_all!
       FindSalon::Result.load_from_findsalon
