@@ -31,11 +31,14 @@ For more details select 1-5 or type exit
 ```ruby
 "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
 
+# in the url use pagetoken for next page of results
+# rankby distance\prominence
+
 uri = URI.parse(url)
 
 response = Net::HTTP.get_response(uri)
-
-json = JSON.parse(response.body)
+data = response.body
+json = JSON.parse(data)
 
 result = json['results'].first
 result['name'] result['vicinity'] result['rating']

@@ -41,12 +41,4 @@ describe FindSalon::Result, :vcr do
     end
   end
 
-  xdescribe '.load from FindSalon' do
-    it 'loads results from FindSalon' do
-      FindSalon::Result.reset_all!
-      FindSalon::Result.load_from_findsalon
-      expect(FindSalon::Result.all).to_not be_empty
-
-    end
-  end
 end

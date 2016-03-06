@@ -26,17 +26,7 @@ describe FindSalon::CLI, :vcr do
     end
   end
 
-  describe '#user_location' do
-    it "returns the user's City and State based off of FindSalon's geolocation." do
-      expect(cli.user_location).to eq('Astoria, New York')
-    end
 
-    it 'sets a users latitude\longitude' do
-      cli.user_location
-      expect(cli.latitude).to eq(40.7611)
-      expect(cli.longitude).to eq(-73.9319)
-    end
-  end
 
   describe '#list_results' do
     it 'lists results in numbered order.' do
@@ -50,6 +40,7 @@ describe FindSalon::CLI, :vcr do
       result_2.name = "Result 2"
       result_2.save
 
+      binding.pry
       cli.list_results
       expect { cli.list_results }.to output("Salons near you:\n1. Result 1\n2. Result 2\n").to_stdout
     end

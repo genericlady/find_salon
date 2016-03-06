@@ -1,0 +1,469 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geoip.maxmind.com/geoip/v2.0/city/69.200.240.81
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Basic MTA5ODM4OjE0Um0yT3kzV2t4Qw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Accept
+      Content-Length:
+      - '1364'
+      Content-Type:
+      - application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.0
+      Date:
+      - Sun, 06 Mar 2016 23:17:40 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZWdpc3RlcmVkX2NvdW50cnkiOnsiZ2VvbmFtZV9pZCI6NjI1MjAwMSwi
+        aXNvX2NvZGUiOiJVUyIsIm5hbWVzIjp7ImphIjoi44Ki44Oh44Oq44Kr5ZCI
+        6KGG5Zu9IiwiemgtQ04iOiLnvo7lm70iLCJwdC1CUiI6IkVzdGFkb3MgVW5p
+        ZG9zIiwiZGUiOiJVU0EiLCJlbiI6IlVuaXRlZCBTdGF0ZXMiLCJlcyI6IkVz
+        dGFkb3MgVW5pZG9zIiwicnUiOiLQodCo0JAiLCJmciI6IsOJdGF0cy1Vbmlz
+        In19LCJtYXhtaW5kIjp7InF1ZXJpZXNfcmVtYWluaW5nIjo0MzY4NX0sImNv
+        bnRpbmVudCI6eyJuYW1lcyI6eyJkZSI6Ik5vcmRhbWVyaWthIiwiZW4iOiJO
+        b3J0aCBBbWVyaWNhIiwicHQtQlIiOiJBbcOpcmljYSBkbyBOb3J0ZSIsInpo
+        LUNOIjoi5YyX576O5rSyIiwiamEiOiLljJfjgqLjg6Hjg6rjgqsiLCJmciI6
+        IkFtw6lyaXF1ZSBkdSBOb3JkIiwicnUiOiLQodC10LLQtdGA0L3QsNGPINCQ
+        0LzQtdGA0LjQutCwIiwiZXMiOiJOb3J0ZWFtw6lyaWNhIn0sImNvZGUiOiJO
+        QSIsImdlb25hbWVfaWQiOjYyNTUxNDl9LCJ0cmFpdHMiOnsiaXBfYWRkcmVz
+        cyI6IjY5LjIwMC4yNDAuODEiLCJhdXRvbm9tb3VzX3N5c3RlbV9udW1iZXIi
+        OiIxMjI3MSIsImlzcCI6IlRpbWUgV2FybmVyIENhYmxlIiwiYXV0b25vbW91
+        c19zeXN0ZW1fb3JnYW5pemF0aW9uIjoiVGltZSBXYXJuZXIgQ2FibGUgSW50
+        ZXJuZXQgTExDIiwib3JnYW5pemF0aW9uIjoiVGltZSBXYXJuZXIgQ2FibGUi
+        LCJkb21haW4iOiJyci5jb20ifSwiY291bnRyeSI6eyJpc29fY29kZSI6IlVT
+        IiwiZ2VvbmFtZV9pZCI6NjI1MjAwMSwibmFtZXMiOnsiZnIiOiLDiXRhdHMt
+        VW5pcyIsInJ1Ijoi0KHQqNCQIiwiZXMiOiJFc3RhZG9zIFVuaWRvcyIsImVu
+        IjoiVW5pdGVkIFN0YXRlcyIsImRlIjoiVVNBIiwiemgtQ04iOiLnvo7lm70i
+        LCJwdC1CUiI6IkVzdGFkb3MgVW5pZG9zIiwiamEiOiLjgqLjg6Hjg6rjgqvl
+        kIjooYblm70ifX0sImxvY2F0aW9uIjp7InRpbWVfem9uZSI6IkFtZXJpY2Ev
+        TmV3X1lvcmsiLCJsYXRpdHVkZSI6NDAuNzczMiwibWV0cm9fY29kZSI6NTAx
+        LCJsb25naXR1ZGUiOi03My45MjZ9LCJzdWJkaXZpc2lvbnMiOlt7Im5hbWVz
+        Ijp7ImZyIjoiTmV3IFlvcmsiLCJydSI6ItCd0YzRji3QmdC+0YDQuiIsImVz
+        IjoiTnVldmEgWW9yayIsImRlIjoiTmV3IFlvcmsiLCJlbiI6Ik5ldyBZb3Jr
+        IiwiamEiOiLjg4vjg6Xjg7zjg6jjg7zjgq/lt54iLCJ6aC1DTiI6Iue6vee6
+        puW3niIsInB0LUJSIjoiTm92YSBJb3JxdWUifSwiaXNvX2NvZGUiOiJOWSIs
+        Imdlb25hbWVfaWQiOjUxMjg2Mzh9XSwiY2l0eSI6eyJuYW1lcyI6eyJlbiI6
+        IkFzdG9yaWEifSwiZ2VvbmFtZV9pZCI6NTEwNzQ2NH0sInBvc3RhbCI6eyJj
+        b2RlIjoiMTExMDIifX0=
+    http_version: 
+  recorded_at: Sun, 06 Mar 2016 23:17:40 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDHV3R2uC7lA3CCuPZu3HzdPu9HI-bu3RM&location=40.7732,-73.926&radius=500&rankby=prominence&type=beauty_salon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 06 Mar 2016 23:17:40 GMT
+      Expires:
+      - Sun, 06 Mar 2016 23:22:40 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7771742,
+                       "lng" : -73.9212917
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "ae114b7d9801f1b075500137075b32834b800c8d",
+                 "name" : "Thai New York Spa & Salon",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1163,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/113427276494051863707/photos\"\u003eThai New York Spa &amp; Salon\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAOFT8mRNYQNqRngh4-F4QrprhIqUQwSTdPXt05MJC1W-1NKjbZui-_vehIA8SPyJKvIJKmI7DxFIyM0a3WQpv9FDcLhuYlgdlWY10E1KoGvAJQ1nEeXukRlMCblm6dhgBEhBARyfyydc0afRI3yi3lUnfGhRkxWsz4CY4Mm1gTKXsAn5MjkMs7g",
+                       "width" : 2048
+                    }
+                 ],
+                 "place_id" : "ChIJHck_2VpfwokRoXdg8srpPsQ",
+                 "rating" : 4.6,
+                 "reference" : "CnRtAAAAiYPvLATvsYUU5ZUXNIyzmEDRkxv0MhJMb035bJHzfX-hVED4fBYEwDrZDo8BG5xjGFUegPmf1w4fS8TqdyOvVGVxMiySZQ_Bv6N_9a2maOgT2Y5ab40tPQKKEDHo0IkBWvw11rJGAxjKQUnI-zZiXRIQOsRDbWPwinvs0bRXDtwR2hoURxM6-VDhwL0QS2yLv-EEKK2_JXk",
+                 "scope" : "GOOGLE",
+                 "types" : [
+                    "beauty_salon",
+                    "spa",
+                    "hair_care",
+                    "health",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "vicinity" : "23-92 21st Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7720638,
+                       "lng" : -73.9249299
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "f9d06dc13e8852a58e9a43d5658d3e80d7ed552b",
+                 "name" : "DJ'S UNISEX BARBER SHOP",
+                 "opening_hours" : {
+                    "open_now" : false,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1362,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/116524998218341222672/photos\"\u003eDJ&#39;S UNISEX BARBER SHOP\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAL9H1GBL52CTYoV5iOeWyM7j0kqHEKuMG3vqxz9r54Of8cpFgwtsspih428i60cvh0rCe3zsmXfA_XDXs1EJ3-GFgEV2tnCwwLCJaasGBXRu6VnyfI4UMIFA_yp42_pGoEhDAeYCoHBblyfr7jNBUqDLOGhTBUqKIJvQ_QlVaYs2PSF0EqzMJTg",
+                       "width" : 2048
+                    }
+                 ],
+                 "place_id" : "ChIJx24RUE9fwokRNtJC2E0wUvg",
+                 "rating" : 4.6,
+                 "reference" : "CnRrAAAABt-5yOZZrcfi_WRxSwYdzVCNbh_NxC5PBcZbf9qmJOn5uN9S3JAxvyXUFjZn29tK3bO0BSd_W2A21fOHvl926YkeZwahH1MxplkQXT5W5Ltgfiu6iZuGsvUImaVCZN24fcqA-jrUW2IHpHLt3gX_GhIQN1d4g7XPdkoX4JQeyiMzDBoUkgy_ukY9cvYNHSKwpoddMTZoJgU",
+                 "scope" : "GOOGLE",
+                 "types" : [
+                    "beauty_salon",
+                    "health",
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "vicinity" : "22-03 Astoria Boulevard, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76952569999999,
+                       "lng" : -73.9240349
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "31f66c935c0ba156f23b2955a4916b02e03e5808",
+                 "name" : "Styled By Jen",
+                 "place_id" : "ChIJV2w0_j9fwokRRgwO91qJ8hw",
+                 "reference" : "CmRgAAAAY-w7Q7BccBABvgJ6CpMyerHht-INBjF5_afsF9mt8xoA9hVf0Lgk6D1gT3MGRteiYpIKdN7iFkI1sXOxj6JWW19G70o5NV7oBkdSVYtiFO-SGLJ0ZDlu8q2y8l3vSH9WEhBpeNN_UQsrRLcaobCh7nHaGhQEUTpbFHLHPadNxslvvymTyMO2ig",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "27-31 Crescent Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7705075,
+                       "lng" : -73.9233381
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "38dc0a1028e7c7d6c3149a3ae36e5c177dba6ae8",
+                 "name" : "Imagination Unisex Hair Designs",
+                 "opening_hours" : {
+                    "open_now" : false,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 308,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/112706385515734545171/photos\"\u003eImagination Unisex Hair Designs\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAXQxADQbMtHu03cK1RnU-lwQ8nyYW0ZC3LKIe3upNRmFrHjCjJ_zn66K13A_i7u9ShpsP7eJmMbzXD9C9WG0dsrHOzNh6S5j-lbLFCPfPDWk154dAt99BYN_mNWjYePhgEhA8g6aVtUe9EoHexu7JOTP_GhRtAHXSmml3XCriRWjnR-d5Joq9CA",
+                       "width" : 490
+                    }
+                 ],
+                 "place_id" : "ChIJOUb1GUZfwokRsPn87LcfSaU",
+                 "reference" : "CoQBcwAAAGako6sGotv04inVpvBRy3GzZhFkGhBXTC4FTl4JeCJIlZBm_tCSap8k9nyTcBMtsdUS0XJF4nCouU_capaCu1BkhItwGcGEkZcGRCDjNQk_oaEXHJTKHXkesLedqwJ0bNkWKhJV0yHDLOUVb_lrucwSR_fdUCAmqSy7R7ZPCK7aEhC_i6BK8pnMR16ikCaP06tqGhTBLM4bb9wI6RzNlwOVDmLnNEdS3w",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "25-01 Newtown Avenue, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7707087,
+                       "lng" : -73.9200048
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "1c660ed6fc8d7b4b3d5ece5a2910b467c1bb356c",
+                 "name" : "Van Alst Realty Inc",
+                 "place_id" : "ChIJEZF3IERfwokR4bHl1Kcl9as",
+                 "reference" : "CnRnAAAABw43wHqUUZ-nkkcQbRe1bl6m8_Tmz9_4bfFag06vAUkyLiNsljnvtrX37zN4-R1Wp3P4fYWJKq93Lhf6iWukAgludtsQyIrWVmtqSYbnD62ngrdZk7mxeJa8n9aOzSdOeu9JJcRDzAtl_1Jn2PKhgxIQCaGVe014NEB4Rl9IwKr7FxoUy-1Q_isaaZmDscIh-KHkGKgCH7M",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2819 Astoria Boulevard, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7713774,
+                       "lng" : -73.9218987
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "6d24f109a16eb7d09e3950d27975b9513ce638bb",
+                 "name" : "Favorite Nails Inc",
+                 "place_id" : "ChIJZTba0EVfwokRqPjSMtA5dyo",
+                 "reference" : "CnRlAAAAJMQtmsXYCbLeU7e_-BEbI_nLviy2ejyLV73sWg7jMmeZB1FjKJ6fDtspG7GZeT5DhorQ7bfgrQC1fcrXkJyjUcbw680aq6kHdLv_r8dmpVYr2cst_WpjC5-nt4JSHoxB9BUzAuUbT-bfabJAKpVioxIQ37z_rBPlGypDYTa7_M7EeRoUqPLbbhX7FWtuYjz3lSmLRuZp7kY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "2523 Astoria Boulevard, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7696305,
+                       "lng" : -73.92756679999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "eb2dc3b55a4df130b02004c13059ad101f34c354",
+                 "name" : "New Magic Beauty Salon",
+                 "place_id" : "ChIJvRbMBklfwokR3yXMp0XQD6o",
+                 "reference" : "CnRqAAAAc_YtHLxb3kmGeJjU0fwI_UooDbLCceWHZt4oVagk5wZkAePNUsGVQYxYRgF5ZaAuJxdBMIlZVUtrKVnWFDOHp6McTdvO4tH1bJNPHr3BM8wNRxHBVHLf8gKNACLGzo4iQouf-3kjq4l9cR7_Lc6eZBIQ5uNuk2UJ-hfBPwjKjLEw7xoUVv1SPHk3WpMSlmfDJHMTkmERIaA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2106 30th Avenue, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7699327,
+                       "lng" : -73.93092810000002
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "bff4c88261ae65becaf3b7ab06bd334947d5c06a",
+                 "name" : "Affordable Hair Extensions By Lucy",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 3264,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/112399540297855538034/photos\"\u003eRonald Rosario\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAA__0mO1cmM_2HKLdcM0JWRiJyTvcohVAU7qQO0wvgzYeSDBoRjqFtTSfac9yteldqe5n5T3FR7IaBUMNMBWDQRgiVQF3K5UGddF9bshOPpg3b4IFZwWkOlp1FyE1R2UgEhB1xBk87AxrrWOiWSIw1029GhShKNR1cPMRvTPBVhdFTYy7FZ6bTQ",
+                       "width" : 2448
+                    }
+                 ],
+                 "place_id" : "ChIJncwxzUtfwokR7xrNXSGVjI0",
+                 "reference" : "CoQBdgAAAJV62GUAUj9uiJQpcU3c798SE2RegnMv5bH0rG3D60IbzEwzhQC8yvAcdwRFL9h-G4yasIvXHZouFm3rn4qdZaW7onW3aMoKuCasyCOBYmseG5ickTRJgZmk5dOIzwZ9BgS0mKcr9JzxQOeRED6qt1qgYRLjXJSyLX90GEhNo-oAEhAItfjxyhnqRlb0_q1o62LoGhRO2Bl62PiSGW1FdImMNWLDqQ2QoA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "30-42 14th Street, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7692437,
+                       "lng" : -73.93136539999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "429ce31bc270f457cc7cf45b5d11ef97dbec3fbe",
+                 "name" : "Sonia Unisex Salon",
+                 "place_id" : "ChIJt20NOUpfwokRNHUvmuLHqXA",
+                 "reference" : "CnRlAAAAchPT_JkU4X8RN71M-gLhYK8sX1wmB6KH8MxZwf38yFYJT7VzsSvNtmtDmq8FgkrtHwM8tQA8jeMKVHm8BSqr4o86vCqqOEPrLwL70mJaSasnaTOGMnCLYOeNuHHDMKJvYf5w3p878J6K4CboO60i9hIQ5abfzBcmMEm4wAKrqumTARoUqcOZjFFgfMSlmsKUnxcF5cF_2I8",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3066 14th Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7688692,
+                       "lng" : -73.9251118
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "eabd590db81ab71288b2ec28e1a409d971ca4a1c",
+                 "name" : "Hair Riot",
+                 "place_id" : "ChIJtfz3EUZfwokRkrwLllTtOzI",
+                 "reference" : "CmRcAAAAyWmyF8LOUsHt-fWmDRh8ODEL0KDBRwfhfQj1hERQX4BcuSJN034qs8lqtkjQ_AcgKQNTlYP3-ZNUhCjrU5Dj6I1Q0Vmv0Pu_zRrbuv3PA-kp5zuVRXIDufxg4ZPWZybsEhC8nVNewEgLOlFe2xiMZ1NiGhTpjdT3TqRvE9gp686wgdxjB4hUfw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2922 Crescent Street, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7704639,
+                       "lng" : -73.92322999999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "86f0284382e07493f87814d2fa54d9a3260530c0",
+                 "name" : "Lidu Hair Studio",
+                 "place_id" : "ChIJ8ZYTEUZfwokRnV-O7xfuCd8",
+                 "reference" : "CnRkAAAAMoVSqFx7M2C_Vb_KPn1HStkBu8_-cgQo7fXMxle2R1IRAOOL9b2hjYomY0uXbXHOHF0pFWxjLrveoacLJs5G8VhX3uP0vl9caNT7lmaUGN4XATybo3i0oZE6maqEAKl5r7A5XioYQVbppw4XD8wYdxIQnHwXT-LvC-u4vB951cCA5BoUnDVKMafvp8IqM9id9aJNdd18VTU",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2505 Newtown Avenue, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7708546,
+                       "lng" : -73.9215591
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "65dd696c1b4e2bde8746ddd6307dfce10a5c032b",
+                 "name" : "Terry's Beauty Cage",
+                 "place_id" : "ChIJV_wCf0ZfwokRwZnoE2sSEVc",
+                 "reference" : "CnRmAAAA3K2LWS0gNFSAzIgED-5lg7zSfpw-y3VrkbuyxjX9vJVXQBVtD3B_T9YK91RQ4SzCkFXkp-0xfR-qdwfLM_AC4PAqrv5H5sAktZgBagWcOs0YKcLDOCubHVWI86Ht42iSquawkX7EuYxS2fvB5daeYBIQYA01qVEAWFvrYQHv_-NdkBoUoYXclH_HoS9t8WIG4V20dIbd_Mg",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2538 Astoria Boulevard, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7742379,
+                       "lng" : -73.92475899999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "0f568ced1f83abb6bfe9c097263a490e772d7b39",
+                 "name" : "Astoria Park Nails",
+                 "place_id" : "ChIJ04ycg09fwokR-v8jetTQHtc",
+                 "reference" : "CnRmAAAA1_A7TmEyPMQ0Ti9Byw-_g58lh0XXCecle9SYbS3iG7Ohr1t8uBDki4PnsUbPd7dhoCMTRrsGPpUq10prhlKC-HdzHzsfIWhYSGN6TK4I9eV1j_ikRqPWL3bqbprEK0r_sNizErW3X-Wa3ngfiP9rGRIQffpSPTib5pTDXUzQem0qGRoUwBzybKarvLlj8EHVwdSJglbHP6c",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "25-20 21st Street, Queens"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7720035,
+                       "lng" : -73.927381
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "3da1476440cc41a423195c3b4b58139e27d46bf1",
+                 "name" : "Zina Unisex Corporation",
+                 "place_id" : "ChIJoZIm1E5fwokRgLSpfP17dOQ",
+                 "reference" : "CnRrAAAAjvFLtRIHCi82xb-H20G0nO285u6SbUyMpC3C2MzFkG8CB4Kxs25uuS7-DFUOP_t2hsb1PrwNq4GNlNL_yTc666dNYlAtDJS6fmciFYyBCYoh8T7n1rMrzJfyZF7o2GTgWzTI_f4bWvTV4mL38qQVNhIQ_eyW1dvc0D41VGB-smjSuhoUSvdt9al5Et_ZG_7-orXZJ1o1P5k",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "1442 Astoria Boulevard, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7741866,
+                       "lng" : -73.9246232
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "c835d116e78a835331ddebe06df54d5d28efff29",
+                 "name" : "Astoria Nails",
+                 "place_id" : "ChIJz47dg09fwokRKJPkXyu5O74",
+                 "reference" : "CnRhAAAAwu7MO-A-v0axidpP2FAPCywTRCQ5WK0aFnwUM7Pz-qzcWFKc6qVaaM7a7RFdO7P3EE-M4HLv8NK6FxPfVSMASHkYmVaayAXMUNL8rqhjO_8QxB6glI-mNVyL-rX2yzbNUIsDYyJ5yDVfBrTIx4oG6hIQBP50YgANPSiTGWf2GgJ77BoUPZ_gDBNfmglH987DWFBZrFqpLac",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "20-1-, 20-99 25th Road, New York"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.773489,
+                       "lng" : -73.924544
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "ac7684471121a58adf057c395cf8f3493faa8c7f",
+                 "name" : "Isai Beauty Salon",
+                 "place_id" : "ChIJnc9ifE9fwokRa4l5rs7pjkg",
+                 "reference" : "CnRkAAAA4XyVj3zNUn8Io85Ao0CLZo9aeABCalJ5hGZZZZP_XhnuzhQnxwUWVGgV2RSSQgm4ARSncCbH54y3UBg1aiGrjyO_lzU9ehRkDFl6qM5KpOsg3xz4FxGPDoZ_1jU3B3bhLAMNpT5TxNUmmkL7x1CG1RIQvj4Cimb6ArGIl0fogfpOzBoUqjzJH7drapk09C4Lk16x6oN_c1s",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "25-37 21st Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.77098100000001,
+                       "lng" : -73.920112
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "56ca762233b207b3ed64e4deced3ee268489ae47",
+                 "name" : "Dominican passion beauty Salon",
+                 "photos" : [
+                    {
+                       "height" : 960,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/112310605593535853063/photos\"\u003eDominican passion beauty Salon\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAeK_DI6QyKYy4jjg2jw073NZ1OLtG1G6Dp4VNk8iSpKc1XnZfsFhUE2cAGr96rSINK7XRYCfzy1JDsdTxPr-87chcxY0zZkZBlN3IfUvOq0aPhsdtib8LAjnpkkoFvADEEhC60ZayeFHKVDG4dxdxUDvAGhSM2cWkYTbdjpqaS7Z4i6yDnk7BIw",
+                       "width" : 960
+                    }
+                 ],
+                 "place_id" : "ChIJSa_eIERfwokR8U_0XtlTwvE",
+                 "reference" : "CoQBcgAAAHNQ5AjtNAy4V7E97u3tsWrNT78DuYdVEdbLUpSorokuB3GqmeBAvz29vvelbGGt83buOwLJj4WncgVov05RcyKtNz-y-jNP_ebt82yhJFf-oUi7luh6xy2SMRQ57u06OvYs4HbJp7QJ8aPr_BQe__OvYIDarmxmZnFQ6guhZMEyEhB4koh4xAQrJTT7BUtIcYWAGhSXma_J9CdSOKC1wbjuLv1yLe8HCQ",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "28-13 Astoria Boulevard, Astoria"
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 06 Mar 2016 23:17:40 GMT
+recorded_with: VCR 3.0.1
