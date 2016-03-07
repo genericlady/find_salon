@@ -9,10 +9,14 @@ class FindSalon::Wrapper
   end
 
   def data
-    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{@latitude},#{@longitude}&radius=500&rankby=prominence&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
-    uri = URI.parse(url)
-    response = Net::HTTP.get_response(uri)
-    @data = response.body
+    unless @data
+      url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{@latitude},#{@longitude}&radius=500&rankby=prominence&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
+      uri = URI.parse(url)
+      response = Net::HTTP.get_response(uri)
+      @data = response.body
+    else
+      @data
+    end
   end
 
   def user_location
@@ -41,9 +45,4 @@ class FindSalon::Wrapper
       r.save
     end
   end
-
-  def self.load_from_findsalon
-    uri = URI.parse("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7732,-73.926&radius=500&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}")
-  end
-
 end

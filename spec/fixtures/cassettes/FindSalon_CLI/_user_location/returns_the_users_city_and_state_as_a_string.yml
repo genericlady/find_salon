@@ -1,0 +1,447 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://geoip.maxmind.com/geoip/v2.0/city/69.200.240.51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Basic MTA5ODM4OjE0Um0yT3kzV2t4Qw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Accept
+      Content-Length:
+      - '1365'
+      Content-Type:
+      - application/vnd.maxmind.com-city+json; charset=UTF-8; version=2.0
+      Date:
+      - Mon, 07 Mar 2016 15:58:28 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJsb2NhdGlvbiI6eyJsYXRpdHVkZSI6NDAuNzYxMSwidGltZV96b25lIjoi
+        QW1lcmljYS9OZXdfWW9yayIsImxvbmdpdHVkZSI6LTczLjkzMTksIm1ldHJv
+        X2NvZGUiOjUwMX0sIm1heG1pbmQiOnsicXVlcmllc19yZW1haW5pbmciOjQz
+        Njc2fSwicG9zdGFsIjp7ImNvZGUiOiIxMTEwNiJ9LCJjb250aW5lbnQiOnsi
+        bmFtZXMiOnsiamEiOiLljJfjgqLjg6Hjg6rjgqsiLCJlbiI6Ik5vcnRoIEFt
+        ZXJpY2EiLCJydSI6ItCh0LXQstC10YDQvdCw0Y8g0JDQvNC10YDQuNC60LAi
+        LCJkZSI6Ik5vcmRhbWVyaWthIiwicHQtQlIiOiJBbcOpcmljYSBkbyBOb3J0
+        ZSIsInpoLUNOIjoi5YyX576O5rSyIiwiZXMiOiJOb3J0ZWFtw6lyaWNhIiwi
+        ZnIiOiJBbcOpcmlxdWUgZHUgTm9yZCJ9LCJnZW9uYW1lX2lkIjo2MjU1MTQ5
+        LCJjb2RlIjoiTkEifSwiY2l0eSI6eyJuYW1lcyI6eyJlbiI6IkFzdG9yaWEi
+        fSwiZ2VvbmFtZV9pZCI6NTEwNzQ2NH0sInJlZ2lzdGVyZWRfY291bnRyeSI6
+        eyJpc29fY29kZSI6IlVTIiwiZ2VvbmFtZV9pZCI6NjI1MjAwMSwibmFtZXMi
+        OnsiZnIiOiLDiXRhdHMtVW5pcyIsInpoLUNOIjoi576O5Zu9IiwicHQtQlIi
+        OiJFc3RhZG9zIFVuaWRvcyIsImVzIjoiRXN0YWRvcyBVbmlkb3MiLCJkZSI6
+        IlVTQSIsInJ1Ijoi0KHQqNCQIiwiZW4iOiJVbml0ZWQgU3RhdGVzIiwiamEi
+        OiLjgqLjg6Hjg6rjgqvlkIjooYblm70ifX0sImNvdW50cnkiOnsiaXNvX2Nv
+        ZGUiOiJVUyIsIm5hbWVzIjp7InB0LUJSIjoiRXN0YWRvcyBVbmlkb3MiLCJ6
+        aC1DTiI6Iue+juWbvSIsImVzIjoiRXN0YWRvcyBVbmlkb3MiLCJmciI6IsOJ
+        dGF0cy1VbmlzIiwiZGUiOiJVU0EiLCJqYSI6IuOCouODoeODquOCq+WQiOih
+        huWbvSIsImVuIjoiVW5pdGVkIFN0YXRlcyIsInJ1Ijoi0KHQqNCQIn0sImdl
+        b25hbWVfaWQiOjYyNTIwMDF9LCJzdWJkaXZpc2lvbnMiOlt7Imlzb19jb2Rl
+        IjoiTlkiLCJuYW1lcyI6eyJmciI6Ik5ldyBZb3JrIiwiemgtQ04iOiLnur3n
+        uqblt54iLCJwdC1CUiI6Ik5vdmEgSW9ycXVlIiwiZXMiOiJOdWV2YSBZb3Jr
+        IiwiZGUiOiJOZXcgWW9yayIsInJ1Ijoi0J3RjNGOLdCZ0L7RgNC6IiwiZW4i
+        OiJOZXcgWW9yayIsImphIjoi44OL44Ol44O844Oo44O844Kv5beeIn0sImdl
+        b25hbWVfaWQiOjUxMjg2Mzh9XSwidHJhaXRzIjp7ImF1dG9ub21vdXNfc3lz
+        dGVtX29yZ2FuaXphdGlvbiI6IlRpbWUgV2FybmVyIENhYmxlIEludGVybmV0
+        IExMQyIsImF1dG9ub21vdXNfc3lzdGVtX251bWJlciI6IjEyMjcxIiwib3Jn
+        YW5pemF0aW9uIjoiVGltZSBXYXJuZXIgQ2FibGUiLCJpcF9hZGRyZXNzIjoi
+        NjkuMjAwLjI0MC41MSIsImlzcCI6IlRpbWUgV2FybmVyIENhYmxlIiwiZG9t
+        YWluIjoicnIuY29tIn19
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 15:58:29 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDHV3R2uC7lA3CCuPZu3HzdPu9HI-bu3RM&location=40.7611,-73.9319&radius=500&rankby=prominence&type=beauty_salon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 07 Mar 2016 15:58:29 GMT
+      Expires:
+      - Mon, 07 Mar 2016 16:03:29 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76266,
+                       "lng" : -73.92642599999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "2c5662facf6f5489036f180832c42512b3d2c370",
+                 "name" : "Beauty Palace Salon & Spa",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 572,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/103395073568512744945/photos\"\u003eBeauty Palace Salon &amp; Spa\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAgT_iXVgggZjeU7fR-XthQjmNxuaeozgS2uBCyd_oxxwx_t45-uRGImbPqyuGEbXEVZqivyzPULtADPX506qDSNnmAKMvEVlb2fjagCG1lXxcs57NxuV_EHpZqloq_Z0_EhCYkzDRTdfD9OUCtE9cz2rVGhRS7cNxyaGxij4gZ79pze8kOj2fSA",
+                       "width" : 837
+                    }
+                 ],
+                 "place_id" : "ChIJ1ywgJTdfwokRR1z60R__k-4",
+                 "reference" : "CnRtAAAAsCKSTmPFfIwJ2JG1vhWQKMkywUbisS210tLi5KbikSYalZ881oM8Abrf9W4TeZKDS7RIgc6un6-lfuKlg8mrpqvQyNcuEfdDrh4nmEFs4XzLZ8MXqtbDPB5fMliq-5dO5VbfmjIzoLz7FszHGkvpOBIQExZl6ZNS9CZwOVg3pO-qoRoUWLXqmT43FcBsBnJSgQ3wPR8NME8",
+                 "scope" : "GOOGLE",
+                 "types" : [
+                    "beauty_salon",
+                    "spa",
+                    "hair_care",
+                    "point_of_interest",
+                    "establishment"
+                 ],
+                 "vicinity" : "2911 Broadway, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76204300000001,
+                       "lng" : -73.9259081
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "4dd0ec26b3f676c232838667bc533e1fbc1668ec",
+                 "name" : "Priti Women Beauty & Boutique",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 960,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/111803017943662914304/photos\"\u003ePriti Women Beauty &amp; Boutique\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAaG8jEPRkPYB7J35UXy8njeaAYfFqSg4qlaGW47k9Z3lCt526J5BxdXaekfCvJZvG_fK1pRDwXJsx-XivJrcTNGoZb6Ecgaw7IMA6PHuwpTbFRUInSnZhvnZoJADB5NTFEhD4Im423HbnCsk3bJrdlvM2GhQ0DrstTuHmdAuBnOUYA0B_O8IsBw",
+                       "width" : 720
+                    }
+                 ],
+                 "place_id" : "ChIJL4ubNjdfwokRhM2FFpDOPBM",
+                 "reference" : "CnRwAAAAcxPs6-UOlNAJ3ETFAAlmTi7f9QnxYqijP0PbgRxgtYrvugNvvMokh9Z66Ri4yt1gKxsULqird3uI__HUXYeGY9re-A8-NJsa_5XYHzRV5DaSYJtQrihprLVphbSR7lt2KNGrRissQyOtS7eDDSgIARIQhHb77cqyU3Eo2wUx6KNugxoUrz8FodKhKJc7Otv8Vug2-E_WGTM",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3008 Broadway # A, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7633503,
+                       "lng" : -73.9280215
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "b7fd12227f02f63948c0b733f65861baec703281",
+                 "name" : "Seabelle Beauty Salon",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 2048,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/102846941184706097409/photos\"\u003eSeabelle Beauty Salon\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAAkM3rNH_08C9U_1Cvv-Id2U1t6aMGjCzRk-X6EK2tFo9Ts-6knCToBAOuTwzdM2hgQ5bUe_-rf4vUTU6Dvq2nAwbnsCq-JiXLz-36F6kIE4dxX8s5gJRxSpK4QyZ8M0GdEhBXzwD_50MLLPJ2hfDKJyqPGhSb6A0aS1WAEXZK1M5Y_D5CnoanwQ",
+                       "width" : 1152
+                    }
+                 ],
+                 "place_id" : "ChIJ7ygz6jZfwokR_LQwP5PZK_E",
+                 "rating" : 4.8,
+                 "reference" : "CnRpAAAAz--HBxhnfNg-YBZJNbtNQV8S5r_Qe4j28kY-uXlIcNUkKiLN2WlVqPPxCOQvnTcR7tudYkzFT3ydj7XeJtOivmgVhGnB3IqYpwK2xsut-d_Z9PSyXzOBGJl24xVQiJnHSNAfTj_oOwphq-Wj355SiRIQjBQ_pC0tjQp2bKgeYzlVkBoUINynaB8zpbTRLmeBfouBu2F7G6s",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "25-05 Broadway, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7608651,
+                       "lng" : -73.9311201
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "b15ee870352907425a6439dc27770d4f6d78a1fa",
+                 "name" : "Akiyo Henna Inc",
+                 "photos" : [
+                    {
+                       "height" : 1800,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/108424701526038625858/photos\"\u003eAkiyo Henna Inc\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRdAAAA4oEbtZkvgTT00R4uOHASON-369-FrCEbXFQHxa4C6dHQuEfknp7xAe-Nf_df4D4ykAkWpKpPIXXEyN81xwreZBFY_2r5Diuzlc7OZ1kAdql-krs0Ejs3-8jECv43iOhfEhBlOzoVXSVGGQK8-93UnRYvGhQcoQgxBjg3WedPybamHfWnpUFE6w",
+                       "width" : 1424
+                    }
+                 ],
+                 "place_id" : "ChIJF7i6xjNfwokRgRRwDH-6gy8",
+                 "reference" : "CnRiAAAA35m0XdA4mmt7rU-co-_eB72199ip_j1Z_oKhcpw-RF6mTj64ycst-u8UswfHiIvEUGGMmRXnOqSNOOdbV7Sri1_2J8qFtGQ-7Qo5YfBHBD1yf9sZh_Fqmb7p-Y3mNAlei7Fy2-mLnlnRJUR4K4LaRRIQB46rJZet2Ftr_9PBKtQ3bRoUlWnMhiZXCwagtnheVQ-qRCKl518",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "store", "point_of_interest", "establishment" ],
+                 "vicinity" : "34-16 Crescent Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7633392,
+                       "lng" : -73.92790359999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "3f64a343733153b86dc2dda7661882631e36d242",
+                 "name" : "Queen Nail Salon",
+                 "place_id" : "ChIJAzfv6TZfwokRprRyTg-jO-g",
+                 "reference" : "CnRkAAAA8MLwtiK94vOOTA8m0gniBklpDyCMzSeXRMEH-XsVToQ-yxTC4L_u4vFDsUJA6_90NcmtVPR_9urvhv8wqDZTaBLcJxbvyPWl7GkesLJRaMnzavrflEmZpTuRVChC0adDIluHkbdC0gAE1ID82g5xmxIQUKS64mq_TTvwbQAsuKSLNhoUrKzCi6vPP0NoJpwwMjclizmLJVQ",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "2511 Broadway, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76268109999999,
+                       "lng" : -73.926419
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "f3d2703084c367a39fb0824c075b22dfa411e028",
+                 "name" : "Sara's Endermologie",
+                 "place_id" : "ChIJ--olJTdfwokR_H1MUZrzYJA",
+                 "reference" : "CnRnAAAAV5MnfAyUvwQtmgpo4gxvySavibt47rShVZEioaaQbFmqlQZv389lVcq7qLPPXNwIfqnbDibD4O5K9Ms1Z3ESvVdSaVsKZHza3qN858xB5GxzbJTL-dZlDFzZX7PPTL1QbOfq5TjcBUxorlZGqaQeFRIQFXqAtfn-TOTT296ZKYqqLhoUHeDA5We-5JM6RDI-rdI0dtxO1Cg",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2911 Broadway, Queens"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.764412,
+                       "lng" : -73.9306417
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "063679b06944d9082354b36e0271d7d13066cd09",
+                 "name" : "Mystique Hair & Beauty Salon",
+                 "place_id" : "ChIJS4hFLjRfwokReFFipdRKS9I",
+                 "reference" : "CnRwAAAA2PQib7lJ9O7Mr6QH2Vh61MF15Da9UK_9kcwq1DGSu6t7sIgYEnGaZWNghHmIOLTWvCLlNI7gl6T4AY6o5FjZo_6aschz_DZE9DuhNfAvvupTUo0xdz4UvlPY8CoQbhS8qDMTyrXMzv169vKUeBgMVhIQGWd97TNv9dBdhjn6Ldf31RoUlew7KWxP-J_De5SJ7Y6brQMYldA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2134 Broadway # 1, New York"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7567107,
+                       "lng" : -73.92939079999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "db3297406d3f1410bb0f0c6e4a6c6c0cbd9d89e4",
+                 "name" : "Sense Beauty Salon Inc",
+                 "place_id" : "ChIJt5FwBS5fwokRRMTBBEyeD2s",
+                 "reference" : "CnRpAAAAF8ULi0tz6CdGzLUCIZ4NMzqHv1M3JVTLO9Bx8SgsVY__Rteiq5BXT2ZaQ7zFWxIZF8UnJgBlKgYzoPjdOlt2UcBiYWOk1DIvamqquxMSLHCR4ojs_kX-_9oY67MKKoY_8LJ23HoTqUQgAs6SFDINaBIQI3dEq2bOl6K6BBGURPac_RoUl_rP2HvyD9Q0tZ5dZjuCc4n3oBE",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3553 31st Street, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.75732819999999,
+                       "lng" : -73.9310023
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "c05db680b77ad0543c5c331421e367b69bfdb858",
+                 "name" : "Sonar Bangla Hair Cutting Sln",
+                 "place_id" : "ChIJrc4M9C1fwokRAKrk53gwRiQ",
+                 "reference" : "CnRwAAAA8QLMVkf1nn3u_Y4ACCTq9akZD0X_0XENzPtizXsckNz4DZ_SvTvVNY0BSAjMh4t0o0ri_B4TnYyKfTPsP6H6ku0pmdLOUbaokWyj_xDCqN5y3YCw3W4BOmDI4gCY7FzvD445pNryGbN27TKFwPOssRIQVZxu-8Pq11mAOk6sBvbuXxoUVBHFZYZH0bcCFw4ODbNt6AFi3HA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2907 36th Avenue, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7629383,
+                       "lng" : -73.92782439999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "4f5187c3bece4cedbaca340aee21c843b07e4988",
+                 "name" : "Royal Nails",
+                 "place_id" : "ChIJk5me3DZfwokRWhR32YS2ewk",
+                 "reference" : "CmReAAAATRl01fIlXLp0OwiaeD2X2-Fenc66ZrWe_HT88c3FtSj0dBTXdFA9OrCEwi4X-zrFFDrVNngX8alV4THw0gUtAv28Q69z_VZBN3FT42zBTv-ft6FwxVSKYaxlAv2nFKcaEhAzEcvBNzg79M2-8w6ZAji9GhQ_zwwlQZdShJa7D94_N4hnTkkmGg",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "2520 Broadway # A, New York"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76302179999999,
+                       "lng" : -73.9278566
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "2d81b077e07876385e68863c3e8b75121b422575",
+                 "name" : "Suying Tuina Center Inc",
+                 "place_id" : "ChIJk9jExDZfwokRilZamU4ezRc",
+                 "reference" : "CnRqAAAA1lGfR_k8ze5nx8I8rxxWFcHHTQlO7PNGZLHUoBR-niVP9fanLPtBcEBSjluCPN7AoMotEZ1altrVEJg1EjZtv_OMCxQ7qZZKO_c11_yFFQtjyVc8RKTmigy7rdPK0zambtBZlkw7-qrW6esRdhu9VhIQk1HVSxYYqT0H_MBoJ88uZBoUQBssXz6tYnEa2c-0kpEdmowu-Cw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "2518 Broadway # A, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7569792,
+                       "lng" : -73.9303353
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "aeffc387c90de250aad115e9f3857b75df000779",
+                 "name" : "Nu-Tech Nail Corporation",
+                 "place_id" : "ChIJfRjs_C1fwokRtAYM3co71p4",
+                 "reference" : "CnRsAAAAwUOo7wgnmB-WLUtmlcmWYg_9F0lmiboozNnSBDiMUf2fkHAxQ1m5nrqw-lFd1qdS6oh-97-GL16Ea9cs-FDf8rZup3IOy3GsAj3kgJC8ggkzgB-BhntCStRTAE5f1K9w8aY5i0pVJ9LXgz9wF9oVNRIQCrJJucdsqNlv0-9rtg4ftxoUvCYbbz6O3D7SL6Y5nZ4-B_3lNRM",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3001 36th Avenue, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7621387,
+                       "lng" : -73.92606259999999
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "300b5ef703b2c695362bafd0a3814c3700455ceb",
+                 "name" : "Hanna & Her Sisters Inc",
+                 "place_id" : "ChIJBykrMTdfwokRy32L-zTZ3uQ",
+                 "reference" : "CnRrAAAAu3Wds_9y3fPYCcQsGDPPhHLeaZCUbxxzZvDiIk7LHY4PYaNpNugwJRdtwqy40cjxLa95cxXt0U87EdmMyQ2Przhsaz0QJay50svff1jAESj1ORMf1bHwCImjmQq0SGa5OA4xzCG_ICJdhr9o8wi_SRIQU5zqZz6v2Fq0hEDuZVu1HhoUlxlkEYo09Dj9w5pxboiqut-TPSY",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "3004 Broadway, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7590572,
+                       "lng" : -73.9263217
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "e5d33fca8bca620e7532762dda12cb3d18c60c0c",
+                 "name" : "Simone's Nail Salon",
+                 "place_id" : "ChIJRZQkWjBfwokRTumFLpou5r0",
+                 "reference" : "CnRnAAAAXT528l5zfzb5X3IS9p5ZULbBEcZkXZwgoz1juzqpEximSppjb5T5xebGL_U4b2vDVF2MIHzqPgPoKcphfBroCZKWUTAE2N649nDI47e8zBDTTWzKKJRzsO5pxsFn06AlCti6e96THBc7V8SSltt7HBIQ86VDKwZSjHE5tVFWl87MthoU8qcsboN4zBqKFY4Q2SR3K8I4vcc",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "3202 34th Avenue, Astoria"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7645148,
+                       "lng" : -73.9306988
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "32fcf045d377139cac4342fb74de5e610194a264",
+                 "name" : "Lic Nail Salon",
+                 "place_id" : "ChIJS4hFLjRfwokRHubIRSHMsWw",
+                 "reference" : "CnRhAAAAmYW7vKaQiVrfj5MxhVL-qY2v9WomkyQe7uz_cLCAxaZ4j-wT6DWNXyeDBc-688Xf0v0unN4QVZNofRgGPrcWNUqXleYVoI3vLi-Ma5_x9OAvsQtxwlE_sOKmlC93QT3diTmC806jf1VmMRgOp3AHBhIQeyU6uyMhyrI-8dLSYrBk0BoUtfMGf-LJl8iINi5pvG1KZnX5x0o",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "hair_care", "point_of_interest", "establishment" ],
+                 "vicinity" : "2134 Broadway, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.76287780000001,
+                       "lng" : -73.9267179
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "056c62ddfba9137916ae68ec3a953ad8e478309f",
+                 "name" : "Best Coiffures By Elite Inc",
+                 "place_id" : "ChIJD4K5IzdfwokRiVJS4i7y3Dw",
+                 "reference" : "CnRuAAAAojjhjTrZJnodZyM5jE3D13FxmudwJuLh1lerG8XFrhAC5TBM7A0ANuWKjTb6PoMnZPNmDRfCxHRbHPFEn0D8zAMCpKcY6crNWSrHnua9pixe4HZ_W1YZx4mfTorqEWqGM-nMVvyFW64ESgLqLHjVIBIQ5YF5l71FZt1PGqvwsiC3dRoU04hU1CCtPajxJ6VkOP1P-oQnjM0",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3187 29th Street, Long Island City"
+              },
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.7630489,
+                       "lng" : -73.9285386
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "adb5afece46670aad78e073a988c5da77031f19d",
+                 "name" : "Close To You Unisex",
+                 "place_id" : "ChIJg9GQwTZfwokRqZZ45JvkLIM",
+                 "reference" : "CnRnAAAA9PXYsQPLa2TMJVc_53l5OuXokfF8jxuFTqqm8A0Kk7f5mNmIbtC1y_7U-0L6C8W5RU-ROS23yerSpK0PvxmsnCsahhZMJ4WnSEUOGB61UrF-pOWLAfFH7Ri74hxwEzsi6tu5PmIu4iLO2JsphLhkgRIQLhn4DVqM-jrRZQSPkNk_dBoUiq5EH-gCkCmv5_MvAna4PLa3FiM",
+                 "scope" : "GOOGLE",
+                 "types" : [ "beauty_salon", "point_of_interest", "establishment" ],
+                 "vicinity" : "3209 Crescent Street, Astoria"
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 15:58:29 GMT
+recorded_with: VCR 3.0.1

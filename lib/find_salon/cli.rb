@@ -18,6 +18,35 @@ class FindSalon::CLI
     greet_user
     print_location
     list_results
+    menu
+  end
+
+  def help
+    puts "What would you like to do?"
+    puts "Either type 'list' to list the results again or type an result number for more information."
+  end
+
+  def menu
+    help
+    input = gets.strip
+    while input != 'exit'
+      if input == 'list'
+        list_results
+      else
+        if result = FindSalon::Result.all[input.to_i-1]
+          print_details(result)
+        else
+          puts "Can't find a result, try number's between 1-#{FindSalon::Result.all.size}"
+        end
+      end
+      help
+      input = gets.strip
+    end
+    puts 'Goodbye'
+  end
+
+  def print_details(result)
+    puts "Some details about the #{result.name}"
   end
 
   def greet_user

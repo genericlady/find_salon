@@ -9,10 +9,10 @@ describe FindSalon::Wrapper, :vcr do
     end
   end
 
-  describe '.load_from_findSalon' do
-    it 'loads results from FindSalon' do
+  describe '#load_results' do
+    it 'loads results from google places for FindSalon' do
       FindSalon::Result.reset_all!
-      FindSalon::Wrapper.load_from_findsalon
+      wrapper.load_results
       expect(FindSalon::Result.all).to_not be_empty
     end
   end
