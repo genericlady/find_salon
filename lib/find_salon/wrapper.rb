@@ -1,7 +1,7 @@
 require 'pry'
 class FindSalon::Wrapper
 
-  def initialize(latitude = nil, longitude, city, state)
+  def initialize(latitude, longitude, city, state)
     @longitude = longitude
     @latitude = latitude
     @city = city
@@ -48,13 +48,7 @@ class FindSalon::Wrapper
       r = FindSalon::Result.new
       r.name = result_hash['name']
       r.vicinity = result_hash['vicinity']
-
-      # there should be no logic in the model
-      # if result_hash['rating'] == nil
-      #   r.rating = 'No Rating Available'
-      # else
-        r.rating = result_hash['rating']
-      # end
+      r.rating = result_hash['rating']
       r.place_id = result_hash['place_id']
       r.save
     end
