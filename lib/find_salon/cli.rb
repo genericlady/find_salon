@@ -17,13 +17,20 @@ class FindSalon::CLI
   def start
     greet_user
     print_location
+    is_location_correct?
     list_results
     menu
   end
 
   def help
     puts "What would you like to do?"
-    puts "Either type 'list' to list the results again or type an result number for more information."
+    # if there are more results to display
+    # type 'next' for more results
+    # if there are previous results to display
+    # type 'previous' for previous results
+    puts "Type 'next' for more results"
+    puts "Choose a number for salon details or"
+    puts "Type 'q' for quit"
   end
 
   def menu
