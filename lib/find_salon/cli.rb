@@ -19,9 +19,12 @@ class FindSalon::CLI
   def start
     greet_user
     print_location
-    if is_location_correct?
-      list_results
-    end
+    # while !is_location_correct?
+    #    wrapper.location['Zip'] = get_zip_code
+    #    wrapper.refresh_location
+    # else
+    #   list_results
+    # end
     menu
   end
 
