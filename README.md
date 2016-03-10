@@ -1,5 +1,6 @@
 # Steps to Complete a CLI Gem
-* stub out the interface (use a heredoc and make things easy)
+It would be pretty cool to be able to select other types of
+beauty places.
 
 # A command line tool that finds salons near your location
 

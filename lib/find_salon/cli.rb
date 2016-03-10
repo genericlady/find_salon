@@ -5,11 +5,13 @@ class FindSalon::CLI
 
   def initialize(external_ip = nil)
     @external_ip = external_ip || self.class.get_external_ip
+    # location = Geokit::Geocoders::MultiGeocoder.geocode(@external_ip)
     geoip2_city_data = Geoip2.client.city(@external_ip)
     latitude = geoip2_city_data["location"]["latitude"]
     longitude = geoip2_city_data["location"]["longitude"]
     city = geoip2_city_data["subdivisions"][0]['names']['en']
     state = geoip2_city_data["city"]["names"]["en"]
+    # @wrapper = FindSalon::Wrapper.new(location)
     @wrapper = FindSalon::Wrapper.new(latitude, longitude, state, city)
     @wrapper.load_results
   end
@@ -17,8 +19,9 @@ class FindSalon::CLI
   def start
     greet_user
     print_location
-    is_location_correct?
-    list_results
+    if is_location_correct?
+      list_results
+    end
     menu
   end
 
@@ -62,6 +65,10 @@ class FindSalon::CLI
 
   def print_location
     puts "You are in: " + user_location
+  end
+
+  def is_location_correct?
+    puts "Is location correct? Y/n"
   end
 
   def list_results

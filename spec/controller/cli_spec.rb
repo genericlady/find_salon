@@ -32,6 +32,12 @@ describe FindSalon::CLI, :vcr do
     end
   end
 
+  describe '#is_location_correct?' do
+    it 'asks the user if the location is correct?' do
+      expect { cli.is_location_correct? }.to output("Is location correct? Y/n\n").to_stdout
+    end
+  end
+
   describe '#print_location' do
     it 'prints a users location' do
       expect { cli.print_location }.to output("You are in: Astoria, New York\n").to_stdout
