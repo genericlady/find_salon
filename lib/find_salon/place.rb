@@ -1,0 +1,3 @@
+class FindSalon::Place
+
+end

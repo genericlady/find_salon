@@ -8,6 +8,7 @@ require "find_salon/version"
 require "find_salon/cli"
 require "find_salon/result"
 require "find_salon/wrapper"
+require "find_salon/place"
 
 module FindSalon
   # Your code goes here...
