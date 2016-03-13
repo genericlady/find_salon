@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe FindSalon::Result, :vcr do
-  let(:result) { FindSalon::Result.new }
+describe FindSalon::LocationResult, :vcr do
+  let(:result) { FindSalon::LocationResult.new }
 
   context 'properties' do
     it 'has many attributes' do
@@ -20,7 +20,7 @@ describe FindSalon::Result, :vcr do
     it 'saves the result instance into all results' do
       result.save
 
-      expect(FindSalon::Result.all).to include(result)
+      expect(FindSalon::LocationResult.all).to include(result)
     end
   end
 
@@ -28,7 +28,7 @@ describe FindSalon::Result, :vcr do
     it 'returns all my result instances' do
       result.save
 
-      expect(FindSalon::Result.all).to include(result)
+      expect(FindSalon::LocationResult.all).to include(result)
     end
   end
 
@@ -36,8 +36,8 @@ describe FindSalon::Result, :vcr do
     it 'resets all results' do
       result.save
 
-      FindSalon::Result.reset_all!
-      expect(FindSalon::Result.all).to be_empty
+      FindSalon::LocationResult.reset_all!
+      expect(FindSalon::LocationResult.all).to be_empty
     end
   end
 

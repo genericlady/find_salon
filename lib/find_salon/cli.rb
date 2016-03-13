@@ -1,19 +1,11 @@
 require 'pry'
 
 class FindSalon::CLI
-  attr_reader :external_ip, :user_location
+  attr_reader :external_ip, :user_location, :location_search
 
   def initialize(external_ip = nil)
     @external_ip = external_ip || self.class.get_external_ip
-    # location = Geokit::Geocoders::MultiGeocoder.geocode(@external_ip)
-    geoip2_city_data = Geoip2.client.city(@external_ip)
-    latitude = geoip2_city_data["location"]["latitude"]
-    longitude = geoip2_city_data["location"]["longitude"]
-    city = geoip2_city_data["subdivisions"][0]['names']['en']
-    state = geoip2_city_data["city"]["names"]["en"]
-    # @wrapper = FindSalon::Wrapper.new(location)
-    @wrapper = FindSalon::Wrapper.new(latitude, longitude, state, city)
-    @wrapper.load_results
+    @location_search = location_search || self.class.get_location_search(@external_ip)
   end
 
   def start
@@ -46,10 +38,10 @@ class FindSalon::CLI
       if input == 'list'
         list_results
       else
-        if result = FindSalon::Result.all[input.to_i-1]
+        if result = FindSalon::LocationResult.find(input)
           print_details(result)
         else
-          puts "Can't find a result, try number's between 1-#{FindSalon::Result.all.size}"
+          puts "Can't find a result, try number's between 1-#{FindSalon::LocationResult.all.size}"
         end
       end
       help
@@ -76,7 +68,7 @@ class FindSalon::CLI
 
   def list_results
     puts "Salons near you:"
-    FindSalon::Result.all.each.with_index(1) do |result, i|
+    FindSalon::LocationResult.all.each.with_index(1) do |result, i|
       puts "#{i}. #{result.name} - Rating: #{result.rating}"
       puts "#{result.vicinity}"
     end
@@ -86,7 +78,13 @@ class FindSalon::CLI
     `curl https://api.ipify.org --silent`
   end
 
+  def self.get_location_search(external_ip)
+    @location_search = FindSalon::LocationSearch.new_for_ip(external_ip)
+    @location_search.load_results
+    @location_search
+  end
+
   def user_location
-    @wrapper.user_location
+    location_search.user_location
   end
 end

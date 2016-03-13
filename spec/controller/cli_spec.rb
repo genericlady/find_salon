@@ -28,7 +28,7 @@ describe FindSalon::CLI, :vcr do
 
   describe '#user_location' do
     it 'returns the users city and state as a string' do
-      expect(cli.user_location).to eq("Astoria, New York")
+      expect(cli.user_location).to eq("Astoria, NY")
     end
   end
 
@@ -40,21 +40,21 @@ describe FindSalon::CLI, :vcr do
 
   describe '#print_location' do
     it 'prints a users location' do
-      expect { cli.print_location }.to output("You are in: Astoria, New York\n").to_stdout
+      expect { cli.print_location }.to output("You are in: Astoria, NY\n").to_stdout
     end
   end
 
   describe '#list_results' do
     it 'lists results in numbered order.' do
       cli
-      FindSalon::Result.reset_all!
+      FindSalon::LocationResult.reset_all!
 
-      result_1 = FindSalon::Result.new
+      result_1 = FindSalon::LocationResult.new
       result_1.name = "Result 1"
       result_1.rating = 4
       result_1.save
 
-      result_2 = FindSalon::Result.new
+      result_2 = FindSalon::LocationResult.new
       result_2.name = "Result 2"
       result_2.rating = 3
       result_2.save
