@@ -3,11 +3,7 @@ class FindSalon::LocationSearch
 
   def self.new_for_ip(ip)
     location = Geokit::Geocoders::MultiGeocoder.geocode(ip)
-    location_search = self.new
-    location_search.latitude = location.lat
-    location_search.longitude = location.lng
-    location_search.city = location.city
-    location_search.state = location.state
+    location_search = self.new(location.lat, location.lng, location.city, location.state)
     location_search
   end
 
