@@ -18,13 +18,6 @@ class FindSalon::LocationSearch
     @state = state
   end
 
-  def set_attributes(latitude, longitude, city, state)
-    @latitude = latitude
-    @longitude = longitude
-    @city = city
-    @state = state
-  end
-
   def data
     @data ||= load_data
   end
