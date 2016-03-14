@@ -4,10 +4,6 @@ describe FindSalon::CLI, :vcr do
   let(:cli) { FindSalon::CLI.new('69.200.240.51') }
 
   describe '#initialize' do
-    it 'accepts an initialize for the user' do
-      expect(cli.external_ip).to eq('69.200.240.51')
-    end
-
     it 'finds the external ip address of the user' do
       expect(FindSalon::CLI).to receive(:get_external_ip).and_return('69.200.240.81').at_least(:once)
 

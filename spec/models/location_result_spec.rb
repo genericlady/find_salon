@@ -1,18 +1,21 @@
 require 'spec_helper'
 
 describe FindSalon::LocationResult, :vcr do
-  let(:result) { FindSalon::LocationResult.new }
+  let(:result) { FindSalon::LocationResult.new(
+                              name: "Timothy John's Salon Inc",
+                              vicinity: "313 West 53rd Street, New York",
+                              rating: 4.3,
+                              google_place_id: "ChIJ9woFm1dYwokRL4E4uGA663U"
+                            ) }
 
   context 'properties' do
-    it 'has many attributes' do
-      result.name = "Thai New York Spa & Salon"
-      result.vicinity = "23-92 21st Street, Astoria"
-      result.rating = 4.6
-      result.place_id = "ChIJHck_2VpfwokRoXdg8srpPsQ"
-      expect(result).to have_attributes(name: "Thai New York Spa & Salon",
-                                        vicinity: "23-92 21st Street, Astoria",
-                                        rating: 4.6,
-                                        place_id: "ChIJHck_2VpfwokRoXdg8srpPsQ")
+    it 'has attributes name, vicinity, rating and google_place_id' do
+      expect(result).to have_attributes(
+                          name: "Timothy John's Salon Inc",
+                          vicinity: "313 West 53rd Street, New York",
+                          rating: 4.3,
+                          google_place_id: "ChIJ9woFm1dYwokRL4E4uGA663U"
+                        )
     end
   end
 
@@ -39,6 +42,18 @@ describe FindSalon::LocationResult, :vcr do
       FindSalon::LocationResult.reset_all!
       expect(FindSalon::LocationResult.all).to be_empty
     end
+  end
+
+  describe 'Enumerable#find' do
+    it 'finds a salon by name from the search results' do
+      result = FindSalon::LocationResult.new(
+
+      )
+    end
+  end
+
+  xdescribe '#load_details' do
+
   end
 
 end

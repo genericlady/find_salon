@@ -14,19 +14,22 @@ class FindSalon::LocationSearch
     @state = state
   end
 
+  def url
+    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&radius=500&rankby=prominence&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
+  end
+
+  def load_search_data
+    uri = URI.parse(url)
+    response = Net::HTTP.get_response(uri)
+    response.body
+  end
+
   def data
-    @data ||= load_data
+    @data ||= load_search_data
   end
 
   def json
     @json ||= JSON.parse(data)
-  end
-
-  def load_data
-    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&radius=500&rankby=prominence&type=beauty_salon&key=#{ENV['GOOGLE_PLACES_KEY']}"
-    uri = URI.parse(url)
-    response = Net::HTTP.get_response(uri)
-    response.body
   end
 
   def user_location
@@ -43,10 +46,14 @@ class FindSalon::LocationSearch
         r.name = result_hash['name']
         r.vicinity = result_hash['vicinity']
         r.rating = result_hash['rating']
-        r.place_id = result_hash['place_id']
+        r.google_place_id = result_hash['place_id']
         r.save
       end
     end
   end
+
+  # def location_details(place_id)
+  #
+  # end
 
 end
