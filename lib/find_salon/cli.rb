@@ -1,48 +1,50 @@
-require 'pry'
-
 class FindSalon::CLI
-  attr_reader :external_ip, :user_location, :location_search
+  attr_reader :user_location
 
   def initialize(external_ip = nil)
-    @external_ip = external_ip || self.class.get_external_ip
-    @location_search = location_search || self.class.get_location_search(@external_ip)
+    @external_ip ||= self.class.get_external_ip
+    @user_location ||= self.class.location_search_ip(@external_ip)
   end
 
   def start
+    load_results
     greet_user
     print_location
-    # while !is_location_correct?
-    #    wrapper.location['Zip'] = get_zip_code
-    #    wrapper.refresh_location
-    # else
-    #   list_results
-    # end
+    puts salons
     menu
   end
 
+  # Conduct a search based off of user location and create new salons
+  # Every subsequent call will erase the previous search and create a new one
+  def load_results
+    FindSalon::SalonSearch.new(user_location).create_salons
+  end
+
+  # Results are cached in Salon.all
+  def salons
+    FindSalon::Salon.all.map do |salon|
+      salon.id.to_s + ' ' + salon.name + '-' + salon.rating.to_s + ' ' + salon.vicinity
+    end
+  end
+
   def help
-    puts "What would you like to do?"
-    # if there are more results to display
-    # type 'next' for more results
-    # if there are previous results to display
-    # type 'previous' for previous results
-    puts "Type 'next' for more results"
-    puts "Choose a number for salon details or"
-    puts "Type 'q' for quit"
+    puts [
+          "\nType a command and hit enter",
+          "q=quit, l=list_salons, c=change_location \n\n",
+         ]
   end
 
   def menu
-    help
-    input = gets.strip
-    while input != 'exit'
-      if input == 'list'
-        list_results
-      else
-        if result = FindSalon::LocationResult.find(input)
-          print_details(result)
-        else
-          puts "Can't find a result, try number's between 1-#{FindSalon::LocationResult.all.size}"
-        end
+    input = String.new
+    while input != 'q'
+      if input == 'l'
+        puts salons
+      elsif input == 'c'
+        change_location
+        load_results
+        puts nearby_salons
+      elsif (0..10).include?(input.to_i)
+        puts FindSalon::Salon.find(input.to_i)
       end
       help
       input = gets.strip
@@ -55,36 +57,30 @@ class FindSalon::CLI
   end
 
   def greet_user
-    puts "Welcome to FindSalon."
+    puts "\nWelcome to FindSalon.\n\n"
   end
 
   def print_location
-    puts "You are in: " + user_location
+    puts ["You are in: " + user_location.city, '']
   end
 
   def is_location_correct?
     puts "Is location correct? Y/n"
   end
 
-  def list_results
-    puts "Salons near you:"
-    FindSalon::LocationResult.all.each.with_index(1) do |result, i|
-      puts "#{i}. #{result.name} - Rating: #{result.rating}"
-      puts "#{result.vicinity}"
-    end
-  end
-
   def self.get_external_ip
     `curl https://api.ipify.org --silent`
   end
 
-  def self.get_location_search(external_ip)
-    @location_search = FindSalon::LocationSearch.new_for_ip(external_ip)
-    @location_search.load_results
-    @location_search
+  def self.location_search_ip(external_ip)
+    FindSalon::UserLocation.new_for_ip(external_ip)
   end
 
-  def user_location
-    location_search.user_location
+  def change_location
+    puts ["Please enter address city and state, e.g.",
+         '140 Market St, San Francisco, CA']
+
+    address = gets.strip
+    @user_location = FindSalon::UserLocation.new_for_address(address)
   end
 end

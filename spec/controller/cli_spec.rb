@@ -43,14 +43,14 @@ describe FindSalon::CLI, :vcr do
   describe '#list_results' do
     it 'lists results in numbered order.' do
       cli
-      FindSalon::LocationResult.reset_all!
+      FindSalon::Salon.reset_all!
 
-      result_1 = FindSalon::LocationResult.new
+      result_1 = FindSalon::Salon.new
       result_1.name = "Result 1"
       result_1.rating = 4
       result_1.save
 
-      result_2 = FindSalon::LocationResult.new
+      result_2 = FindSalon::Salon.new
       result_2.name = "Result 2"
       result_2.rating = 3
       result_2.save

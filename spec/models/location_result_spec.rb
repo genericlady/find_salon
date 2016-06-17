@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe FindSalon::LocationResult, :vcr do
-  let(:result) { FindSalon::LocationResult.new(
+describe FindSalon::Salon, :vcr do
+  let(:result) { FindSalon::Salon.new(
                               name: "Timothy John's Salon Inc",
                               vicinity: "313 West 53rd Street, New York",
                               rating: 4.3,
@@ -23,7 +23,7 @@ describe FindSalon::LocationResult, :vcr do
     it 'saves the result instance into all results' do
       result.save
 
-      expect(FindSalon::LocationResult.all).to include(result)
+      expect(FindSalon::Salon.all).to include(result)
     end
   end
 
@@ -31,7 +31,7 @@ describe FindSalon::LocationResult, :vcr do
     it 'returns all my result instances' do
       result.save
 
-      expect(FindSalon::LocationResult.all).to include(result)
+      expect(FindSalon::Salon.all).to include(result)
     end
   end
 
@@ -39,14 +39,14 @@ describe FindSalon::LocationResult, :vcr do
     it 'resets all results' do
       result.save
 
-      FindSalon::LocationResult.reset_all!
-      expect(FindSalon::LocationResult.all).to be_empty
+      FindSalon::Salon.reset_all!
+      expect(FindSalon::Salon.all).to be_empty
     end
   end
 
   describe 'Enumerable#find' do
     it 'finds a salon by name from the search results' do
-      result = FindSalon::LocationResult.new(
+      result = FindSalon::Salon.new(
 
       )
     end

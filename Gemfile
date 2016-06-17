@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in find_salon.gemspec
-
 gem 'geokit'
-#gem 'openssl'
+gem 'vcr'
+gem 'rspec'
 gemspec

@@ -6,8 +6,9 @@ require 'geokit'
 
 require "find_salon/version"
 require "find_salon/cli"
-require "find_salon/location_result"
-require "find_salon/location_search"
+require "find_salon/user_location"
+require "find_salon/salon_search"
+require "find_salon/salon"
 
 module FindSalon
   # Your code goes here...
