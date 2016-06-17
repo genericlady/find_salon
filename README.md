@@ -7,7 +7,7 @@
 ## The executable `bin/find_salon`
 FindSalon will lookup your ip for geographic data and print your city and state.
 ```
-$ ruby bin/find_salon
+$ bin/find_salon
 
 Welcome to FindSalon.
 
