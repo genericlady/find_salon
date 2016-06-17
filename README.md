@@ -1,6 +1,5 @@
 # Installation
-'gem install find_salon'
-'require 'find_salon'
+`gem install find_salon`
 
 # Command Line Interface Tool
 - Clone repo and change directory to project root `cd find_salon` and run `bundle install`
