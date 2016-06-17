@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.geoplugin.net/xml.gp?ip=167.187.200.23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Jun 2016 15:53:59 GMT
+      Content-Type:
+      - application/xml
+      Content-Length:
+      - '1158'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<geoPlugin>\n\t<geoplugin_request>167.187.200.23</geoplugin_request>\n\t<geoplugin_status>200</geoplugin_status>\n\t<geoplugin_credit>Some
+        of the returned data includes GeoLite data created by MaxMind, available from
+        &lt;a href='http://www.maxmind.com'&gt;http://www.maxmind.com&lt;/a&gt;.</geoplugin_credit>\n\t<geoplugin_city>Beverly
+        Hills</geoplugin_city>\n\t<geoplugin_region>CA</geoplugin_region>\n\t<geoplugin_areaCode>310</geoplugin_areaCode>\n\t<geoplugin_dmaCode>803</geoplugin_dmaCode>\n\t<geoplugin_countryCode>US</geoplugin_countryCode>\n\t<geoplugin_countryName>United
+        States</geoplugin_countryName>\n\t<geoplugin_continentCode>NA</geoplugin_continentCode>\n\t<geoplugin_latitude>34.0995</geoplugin_latitude>\n\t<geoplugin_longitude>-118.4143</geoplugin_longitude>\n\t<geoplugin_regionCode>CA</geoplugin_regionCode>\n\t<geoplugin_regionName>California</geoplugin_regionName>\n\t<geoplugin_currencyCode>USD</geoplugin_currencyCode>\n\t<geoplugin_currencySymbol>&amp;#36;</geoplugin_currencySymbol>\n\t<geoplugin_currencySymbol_UTF8>$</geoplugin_currencySymbol_UTF8>\n\t<geoplugin_currencyConverter>1</geoplugin_currencyConverter>\n</geoPlugin>\n"
+    http_version: 
+  recorded_at: Fri, 17 Jun 2016 15:53:57 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBuus0YkJK7uwhsb5yQRsoG5OvhRGRy0CU&location=34.0995,-118.4143&radius=500&rankby=prominence&type=beauty_salon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jun 2016 15:53:57 GMT
+      Expires:
+      - Fri, 17 Jun 2016 15:58:57 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - pablo
+      Content-Length:
+      - '83'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+    http_version: 
+  recorded_at: Fri, 17 Jun 2016 15:53:57 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBuus0YkJK7uwhsb5yQRsoG5OvhRGRy0CU&location=34.0995,-118.4143&radius=500&rankby=prominence&type=beauty_salon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - maps.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jun 2016 15:53:57 GMT
+      Expires:
+      - Fri, 17 Jun 2016 15:58:57 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - pablo
+      Content-Length:
+      - '83'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+    http_version: 
+  recorded_at: Fri, 17 Jun 2016 15:53:57 GMT
+recorded_with: VCR 3.0.3

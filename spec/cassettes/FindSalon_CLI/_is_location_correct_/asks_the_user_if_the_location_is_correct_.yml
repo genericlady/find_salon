@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.geoplugin.net/xml.gp?ip=67.250.81.21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Jun 2016 17:09:50 GMT
+      Content-Type:
+      - application/xml
+      Content-Length:
+      - '1146'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<geoPlugin>\n\t<geoplugin_request>67.250.81.21</geoplugin_request>\n\t<geoplugin_status>200</geoplugin_status>\n\t<geoplugin_credit>Some
+        of the returned data includes GeoLite data created by MaxMind, available from
+        &lt;a href='http://www.maxmind.com'&gt;http://www.maxmind.com&lt;/a&gt;.</geoplugin_credit>\n\t<geoplugin_city>Astoria</geoplugin_city>\n\t<geoplugin_region>NY</geoplugin_region>\n\t<geoplugin_areaCode>718</geoplugin_areaCode>\n\t<geoplugin_dmaCode>501</geoplugin_dmaCode>\n\t<geoplugin_countryCode>US</geoplugin_countryCode>\n\t<geoplugin_countryName>United
+        States</geoplugin_countryName>\n\t<geoplugin_continentCode>NA</geoplugin_continentCode>\n\t<geoplugin_latitude>40.7732</geoplugin_latitude>\n\t<geoplugin_longitude>-73.926</geoplugin_longitude>\n\t<geoplugin_regionCode>NY</geoplugin_regionCode>\n\t<geoplugin_regionName>New
+        York</geoplugin_regionName>\n\t<geoplugin_currencyCode>USD</geoplugin_currencyCode>\n\t<geoplugin_currencySymbol>&amp;#36;</geoplugin_currencySymbol>\n\t<geoplugin_currencySymbol_UTF8>$</geoplugin_currencySymbol_UTF8>\n\t<geoplugin_currencyConverter>1</geoplugin_currencyConverter>\n</geoPlugin>\n"
+    http_version: 
+  recorded_at: Fri, 17 Jun 2016 17:09:47 GMT
+recorded_with: VCR 3.0.3

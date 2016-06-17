@@ -44,16 +44,4 @@ describe FindSalon::Salon, :vcr do
     end
   end
 
-  describe 'Enumerable#find' do
-    it 'finds a salon by name from the search results' do
-      result = FindSalon::Salon.new(
-
-      )
-    end
-  end
-
-  xdescribe '#load_details' do
-
-  end
-
 end

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "find_salon"
+require_relative "../lib/find_salon.rb"
 
 FindSalon::CLI.new.start

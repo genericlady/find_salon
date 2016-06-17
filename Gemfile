@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'pry'
+gem 'webmock'
 gem 'geokit'
 gem 'vcr'
 gem 'rspec'
-gemspec
+gem 'require_all'
