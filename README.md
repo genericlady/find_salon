@@ -1,6 +1,14 @@
 # Command Line Interface Tool
 - Clone repo and change directory to project root `cd find_salon` and run `bundle install`
 
+# Install gem
+You do not need to install gem to use the command line tool just clone repo.
+If you do want to install the gem then clone repo and cd into project root.
+```
+gem build find_salon.gemspec
+gem install find_salon-0.1.0.gem
+```
+
 ## The executable `bin/find_salon`
 FindSalon will lookup your ip for geographic data and print your city and state.
 ```
