@@ -15,12 +15,6 @@ context FindSalon::UserLocation, :vcr do
     end
   end
 
-  # describe '.new_for_address' do
-  #   it 'creates a new instance of a UserLocation by address' do
-  #
-  #   end
-  # end
-
   describe 'initialize' do
     it "doesn't require arguments upon initialize" do
       expect(FindSalon::UserLocation.new).to have_attributes(
@@ -42,7 +36,4 @@ context FindSalon::UserLocation, :vcr do
     end
   end
 
-  # describe '#change_location' do
-  #
-  # end
 end
